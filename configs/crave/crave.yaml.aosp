@@ -1,8 +1,4 @@
-manifest_url: https://github.com/AOSPA/manifest
-manifest_branch: android-15
-
-local_manifests:
-  - url: https://github.com/danuprakasa/local_manifests
-    branch: main
-
-lunch_target: aospa_apollo-userdebug
+- name: Inject local manifests
+  run: |
+    mkdir -p .repo/local_manifests
+    curl -L https://raw.githubusercontent.com/dakzdev/local_manifests/main/apollo.xml -o .repo/local_manifests/apollo.xml
