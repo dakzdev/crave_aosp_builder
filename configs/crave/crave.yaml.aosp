@@ -1,25 +1,8 @@
-#This is a template, modify as you like
-CipherOS:
-  ignoreClientHostname: true
-Arrow OS:
-  ignoreClientHostname: true
-DerpFest-aosp:
-  ignoreClientHostname: true
-LOS 20:
-  ignoreClientHostname: true
-LOS 18.1:
-  ignoreClientHostname: true
-LOS 21:
-  ignoreClientHostname: true
-LOS 22:
-  ignoreClientHostname: true
-PixelOS:
-  ignoreClientHostname: true
-Rising OS:
-  ignoreClientHostname: true
-LOS 16:
-  ignoreClientHostname: true
-LOS CM 14.1:
-  ignoreClientHostname: true
+manifest_url: https://github.com/AOSPA/manifest
+manifest_branch: android-15
 
-#ignoreClientHostname is used to keep persistence by ignoring the client hostname
+local_manifests:
+  - url: https://github.com/danuprakasa/local_manifests
+    branch: main
+
+lunch_target: aospa_apollo-userdebug
