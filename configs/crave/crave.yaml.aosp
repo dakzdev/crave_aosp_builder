@@ -1,4 +1,4 @@
 - name: Inject local manifests
   run: |
     mkdir -p .repo/local_manifests
-    curl -L https://raw.githubusercontent.com/dakzdev/local_manifests/main/apollo.xml -o .repo/local_manifests/apollo.xml
+    curl -L https://raw.githubusercontent.com/dakzdev/local_manifests/main/local_manifest.xml -o .repo/local_manifests/local_manifest.xml
